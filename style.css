@@ -1,16 +1,23 @@
+body {
+  display:flex;
+  flex-direction: column
+}
+
 header {
   background-color: #ffdbaa;
   border: solid black 1px;
 }
 
 h1 {
-  font-color: #553100;
+  color: #553100;
   display: inline-block;
+  margin: 2%;
 }
 
 nav {
   display: inline-block;
-  float:right
+  float: right;
+  margin: 1%;
 }
 
 nav > button {
@@ -24,8 +31,16 @@ nav > button {
 
 main {
   background-color: #d4a76a;
-  display: inline block;
-  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+aside {
+  background-color: #d4a76a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around
 }
 
 .flights,
@@ -33,7 +48,6 @@ main {
 .discountFlights {
   height: 200px;
   width: 250px;
-  display: inline-block;
   margin: 3% auto;
   padding: 2%;
   background-color: white;
@@ -44,12 +58,14 @@ main {
 .aboutUs {
   max-height: 30%;
   max-width: 100%;
-  display: inline-block;
   margin: 2.5% 5%;
   padding: 2%;
   background-color: white;
   border: solid black 1px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 dl {
@@ -57,11 +73,10 @@ dl {
   font-weight: bold;
 }
 
-main > section > button {
+section > button {
   background-color: #805215;
   color: white;
   width: 90%;
   height: 40px;
-  margin: 2.5%;
-  text-align: center;
+  margin: 2.5% 3%;
 }
