@@ -1,17 +1,17 @@
 header {
   background-color: #ffdbaa;
-  float: top;
   border: solid black 1px
 }
 
-header.h1 {
+header > h1 {
   font-color: #553100;
+  display:inline-block
 }
 
 nav > button {
   background-color: #805215;
   color:white;
-  display:inline block;
+  display:inline-block;
   margin:15px;
   width:75px;
   height:40px
@@ -19,23 +19,41 @@ nav > button {
 
 main {
   background-color: #d4a76a;
-  float:bottom;
   display:inline block
 }
 
-main > section {
+.flights, .groupTrips, .discountFlights{
+  height:200px;
+  width:250px;
+  display:inline-block;
+  margin: 2.5% 1%;
+  padding:2%;
+  background-color:white;
+  border: solid black 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+.aboutUs {
   max-height:30%;
-  max-width:20%;
-  display:inline;
-  margin: 0 auto;
-  background-color:white
+  max-width:100%;
+  display:inline-block;
+  margin: 2.5% 5%;
+  padding:2%;
+  background-color:white;
+  border: solid black 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+dl {
+  text-align: center;
+  font-weight:bold
 }
 
 main > section > button {
   background-color: #805215;
   color:white;
-  float: bottom;
-  display:inline block;
-  width:100%;
-  height:40px
+  width:90%;
+  height:40px;
+  margin:2.5%;
+  text-align: center;
 }
