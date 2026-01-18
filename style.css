@@ -1,21 +1,24 @@
 header {
   background-color: #ffdbaa;
   float: top;
-  display: in-line block
+  display: inline block
 }
 nav > button {
   background-color: #805215;
   color:white;
   float: right;
-  display:in-line block;
-  margin:10px
+  display:inline block;
+  margin:15px;
+  width:75px;
+  height:40px
 }
-main > button {
+main > section > button {
   background-color: #805215;
   color:white;
   float: bottom;
-  display:in-line block;
-  width:auto
+  display:inline block;
+  width:100%;
+  height:40px
 }
 header.h1 {
   font-color: #553100;
@@ -24,9 +27,15 @@ header.h1 {
 main {
   background-color: #d4a76a;
   float:bottom;
-  display:in-line block
+  display:inline block
 }
 
+main > section {
+  max-height:30%;
+  max-width:20%;
+  display:inline;
+  margin: 0 auto
+}
 section {
   background-color:white
 }
