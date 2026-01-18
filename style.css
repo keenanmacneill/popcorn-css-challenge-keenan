@@ -1,13 +1,21 @@
 header {
-  background-color: #FFDBAA
+  background-color: #ffdbaa;
+  float: left;
+  display: in-line block
 }
 button {
-  color: #805215
+  color: #805215;
+  float: right;
+  display:in-line block
 }
-header {
-  font-color: #553100
+header.h1 {
+  font-color: #553100;
 }
 
 main {
-  background-color: #D4A76A
+  background-color: #d4a76a;
+}
+
+section {
+  background-color:white
 }
