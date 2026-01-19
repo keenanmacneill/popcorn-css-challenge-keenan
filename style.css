@@ -1,32 +1,33 @@
 body {
-  display:flex;
-  flex-direction: column
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   background-color: #ffdbaa;
   border: solid black 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 h1 {
   color: #553100;
-  display: inline-block;
-  margin: 2%;
 }
 
 nav {
-  display: inline-block;
-  float: right;
-  margin: 1%;
+  display: flex;
+  flex-firection: space-around;
 }
 
 nav > button {
   background-color: #805215;
   color: white;
-  display: inline-block;
+  font-weight: bold;
+  text-align: center;
   margin: 15px;
-  width: 75px;
-  height: 40px;
+  width: 80px;
+  height: 45px;
 }
 
 main {
@@ -40,13 +41,13 @@ aside {
   background-color: #d4a76a;
   display: flex;
   flex-direction: column;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
 .flights,
 .groupTrips,
 .discountFlights {
-  height: 200px;
+  height: 150px;
   width: 250px;
   margin: 3% auto;
   padding: 2%;
